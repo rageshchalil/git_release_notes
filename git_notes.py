@@ -3,8 +3,8 @@ import gitnotes
 import os
 
 parser = argparse.ArgumentParser(description='Retrive Git commit as release notes.')
-parser.add_argument('-e', '--path', type=str, required=True,
-                    help='The path of the repository)')
+parser.add_argument('-p', '--path', type=str, required=True,
+                    help='The path to the folder)')
 parser.add_argument('-k', '--key', type=str, required=True,
                     help='The Story/Project id/key from Jira)')
 parser.add_argument('-c', '--c_count', type=str,
